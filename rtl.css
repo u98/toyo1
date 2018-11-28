@@ -1,0 +1,175 @@
+/*
+Theme Name: CarForYou
+Description: Adds support for languages written in a Right To Left (RTL) direction.
+It's easy, just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+See: https://codex.wordpress.org/Right_to_Left_Language_Support
+*/
+/**
+ * Table of Contents:
+ *
+ * 1.0 - Reset
+ * 2.0 - Typography
+ * 3.0 - Elements
+ * 4.0 - Forms
+ * 5.0 - Navigations
+ * 6.0 Alignments
+ * 7.0 Comments
+
+
+/**
+ * 1.0 Reset
+ */
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+caption,
+th,
+td {
+	text-align: right;
+}
+/**
+ * 2.0 Typography
+ */
+blockquote {
+	border-right: 4px solid rgba(51, 51, 51, 0.7);
+	border-left: 0;
+	padding-right: 0.7778em;
+	padding-left: 0;
+}
+/**
+ * 3.0 Elements
+ */
+ul,
+ol {
+	margin: 0 1.3333em 1.6em 0;
+}
+caption,
+th,
+td {
+	text-align: right;
+}
+/**
+ * 4.0 Forms
+ */
+.post-password-form input[type="submit"] {
+	right: auto;
+	left: 0;
+}
+/**
+ * 5.0 Navigations
+ */
+.post-navigation .has-post-thumbnail a:before {
+	right: 0;
+	left: auto;
+}
+/**
+ * 6.0 Alignments
+ */
+.alignright {
+	float: right;
+}
+.alignleft {
+	float: left;
+}
+.aligncenter {
+	margin-right: auto;
+	margin-left: auto;
+}
+blockquote.alignright,
+.wp-caption.alignright,
+img.alignright {
+	margin: 0.4em 0 1.6em 1.6em;
+}
+blockquote.alignleft,
+.wp-caption.alignleft,
+img.alignleft {
+	margin: 0.4em 1.6em 1.6em 0;
+}
+/**
+ * 7.0 Comments
+ */
+.comment-list .children > li {
+	padding-right: 0.8em;
+	padding-left: 0;
+}
+.comment-author .avatar {
+	float: right;
+	margin-right: 0;
+	margin-left: 0.4em;
+}
+.bypostauthor > article .fn:after {
+	right: 3px;
+	left: auto;
+}
+.comment-metadata .edit-link {
+	margin-right: 1em;
+	margin-left: auto;
+}
+.pingback .edit-link {
+	margin-right: 1em;
+	margin-left: auto;
+}
+.comment-content ul,
+.comment-content ol {
+	margin: 0 1.3333em 1.6em 0;
+}
+.comment-reply-title small a {
+	float: left;
+}
+ul.page-numbers {
+  float: right;
+}
+/**
+ * 8.0 Theme css
+ */
+
+h4.faq_text {text-align: right !important;}
+.featured-car-content li .fa {margin-left: 8px;margin-right: 0;}
+.recent-tab .nav.nav-tabs{ padding-right:0px;}
+.car-title-m h6 {float: right;}
+.car-title-m .price {float: left;}
+.car-info-box li .fa {margin-left: 8px;margin-right: 0;}
+.car-info-box li:nth-child(1) {margin-right: 0;}
+.car-info-box li:nth-last-child(1) {margin-right: 15px;}
+.blog-info-box li .fa {margin-left: 4px;margin-right: 0;}
+.blog-info-box li {margin-left: 10px;margin-right: 0;}
+.product-listing-content li .fa {margin-left: 8px;margin-right: 0;}
+.grid_listing .product-listing-content .car-location i {margin-left: 3px;margin-right: 0;}
+#add_model_compare {left: 0;right: inherit;}
+.compare_product_info table {direction: ltr;}
+.select::after {left: 15px;right: inherit;}
+.widget_heading i {margin-left: 5px;margin-right: 0;}
+.header_search button {left: 8px;right: inherit;}
+.header_search input {padding-left: 45px;padding-right: 15px;}
+ul li i, ol li i {margin-left: 12px;margin-right: 0;}
+.article_meta ul li {margin-left: 35px;margin-right: 0;}
+.wp_nav_links a[rel="next"] {float: left;}
+.circle_icon {float: right;margin-left: 10px;margin-right:0px;}
+.header_widgets {text-align: right;}
+.social-follow {float: right;}
+.looking-cat-image {left: -120px;right: inherit;}
+.banner_content .vc_custom_heading, .fact_m .vc_custom_heading, .our_services .vc_custom_heading, .filter_form h3, .contact_us h3.vc_custom_heading{text-align:right !important;}
+.owl-buttons div, .owl-nav div {float: left;}
+.countdown.styled {direction: ltr;}
+.listing_other_info button i {margin-left: 4px;margin-right: 0;}
+.listing_other_info button {margin-left: 40px;margin-right: 0;}
+.modal .modal-header .close {margin-left: 10px;}
+.contact_detail li {padding-left: 150px;padding-right: 0;}
+.contact_form {direction: rtl;}
+.brand-hadding {float: right;}
+.brand-logo-list {float: left;}
+.product-listing-img {float: right;}
+.product-listing-content {padding-left: 15px;padding-right: 30px;}
+
+
+
+@media (max-width:767px) {
+.header_search {float: left;}
+.navbar-default .navbar-collapse {margin-top: 55px !important;}
+.nav.navbar-nav {padding: 0;}
+.dropdown-menu > li > a {text-align: right;}
+
+}
